@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -242,12 +243,12 @@ section.mais-vendidos ul li {
     opacity: 50%;
 }
 
-section.mais-vendidos ul li a{
+section.mais-vendidos ul li a {
     text-decoration: none;
     color: #5B2A86;
 }
 
-section.mais-vendidos ul li.paes{
+section.mais-vendidos ul li.paes {
     background-color: #5B2A86;
     border-radius: 30px;
     color: #FFFFFF;
@@ -255,17 +256,17 @@ section.mais-vendidos ul li.paes{
     opacity: 100%;
 }
 
-section.mais-vendidos ul li.paes a{
+section.mais-vendidos ul li.paes a {
     color: #FFFFFF;
 }
 
-section.mais-vendidos ul li:hover{
+section.mais-vendidos ul li:hover {
     border-bottom: solid 10px #5B2A86;
     transition: 0.5s;
     opacity: 100%;
 }
 
-section.mais-vendidos ul li.paes:hover{
+section.mais-vendidos ul li.paes:hover {
     transition: border-radius 0s;
     transition:1.5s;
     background-color: transparent;
@@ -273,7 +274,7 @@ section.mais-vendidos ul li.paes:hover{
     border-radius: 0;
 }
 
-section.mais-vendidos ul li.paes a:hover{
+section.mais-vendidos ul li.paes a:hover {
     color: #5B2A86;
     transition:1.5s;
 }
@@ -282,7 +283,7 @@ section.mais-vendidos div.mais-vendidos-images {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin-left: 16rem;
 } 
 
@@ -306,9 +307,10 @@ section.mais-vendidos div.mais-vendidos-images div div img {
     height: 521px;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
-section.mais-vendidos div.mais-vendidos-images div div img:hover{
+section.mais-vendidos div.mais-vendidos-images div div img:hover {
     transform: scale(1.02);
 }
 
@@ -318,16 +320,9 @@ section.mais-vendidos div.mais-vendidos-images div div p {
     font-weight: 700;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 section.delivery {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #FAF5BF;
     height: 680px;
@@ -335,15 +330,16 @@ section.delivery {
 
 section.delivery img {
     object-fit: cover;
-    width: 1125px;
+    width: 1025px;
     height: 995px;
 }
 
-section.delivery div.container {
+section.delivery div.right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 80px;
     gap: 80px;
 }
 
@@ -399,7 +395,7 @@ section.delivery div button {
     border: 0;
 }
 
-section.delivery div button:hover{
+section.delivery div button:hover {
     transform: scale(1.2);
     transition: transform 0.5s ease;
 }
@@ -415,9 +411,9 @@ section.combos {
     justify-content: center;
     align-items: center;
     gap: 150px;
-    height: 1461px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    margin-top: 100px;
 }
 
 section.combos h2 {
@@ -425,7 +421,7 @@ section.combos h2 {
 }
 
 section.combos div.container {
-    width: 86%;
+    width: 94%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -459,6 +455,9 @@ section.fidelidade {
     font-weight: 600;
     background-color: #FAF5BF;
     height: 932px;
+    margin-top: 200px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.8);
 }
 
 section.fidelidade h2 {
@@ -532,5 +531,5 @@ section.fidelidade div.bottom button {
     font-weight: 700;
     color: #F6F3E3;
     cursor: pointer;
+    border: 0px;
 }
-
