@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6F3E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 138px;
+    border-radius: 0 0 25px 25px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F6F3E3;
+}
+
+header h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #5B2A86;
+    margin-left: 55px;
+}
+
+header ul.center {
+    list-style-type: none;
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2.5rem;
+}
+
+header ul.center li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: #5B2A86;
+    height: 60px;
+}
+
+header ul.center li:hover{
+    border-bottom: solid 10px #5B2A86;
+    transition: border-bottom 0.5s;
+}
+
+header ul.center li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul.center li.home {
+    background-color: #5B2A86;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+header ul.center li.home:hover {
+    transition: border-radius 0s;
+    transition:1.5s;
+    background-color: transparent;
+    color: #5B2A86;
+    border-radius: 0;
+
+}
+
+header ul.right {
+    list-style-type: none;
+    display: flex;
+    margin-right: 55px;
+}
+
+header ul.right li {
+    margin: 0 25px;
+}
+
+header ul.right img {
+    width: 35px;
+}
+
+header ul.right li:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #5B2A86;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #5B2A86;
+    margin-top: 20px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5B2A86;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: #6c47a0;
+}
