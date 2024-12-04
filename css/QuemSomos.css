@@ -68,10 +68,19 @@ header ul.center li a {
 
 header ul.center li.QuemSomos{
   background-color: #5B2A86;
-  width: fit-content;
+  width: 170px;
   height: 40px;
   border-radius: 30px;
   color: #FFFFFF;
+}
+
+header ul.center li.QuemSomos:hover {
+  transition: border-radius 0s;
+  transition:1.5s;
+  background-color: transparent;
+  color: #5B2A86;
+  border-radius: 0;
+
 }
 
 header ul.center li.home {
