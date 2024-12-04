@@ -75,7 +75,6 @@ header ul.center li.home:hover {
     background-color: transparent;
     color: #5B2A86;
     border-radius: 0;
-
 }
 
 header ul.right {
@@ -144,6 +143,10 @@ section.destaques h3 {
 
 section.destaques div {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     gap: 0 40px;
 }
 
@@ -430,7 +433,6 @@ section.combos div.container {
 section.combos div.container div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 100px;
 }
 
@@ -468,6 +470,7 @@ section.fidelidade {
 
 section.fidelidade h2 {
     font-size: 40px;
+    text-align: center;
 }
 
 section.fidelidade div.center {
@@ -526,6 +529,7 @@ section.fidelidade div.bottom {
 
 section.fidelidade div.bottom h3 {
     font-size: 40px;
+    text-align: center;
 }
 
 section.fidelidade div.bottom button {
