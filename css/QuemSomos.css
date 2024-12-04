@@ -66,9 +66,17 @@ header ul.center li a {
   color: inherit;
 }
 
+header ul.center li.QuemSomos{
+  background-color: #5B2A86;
+  width: fit-content;
+  height: 40px;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+
 header ul.center li.home {
   background-color: #5B2A86;
-  width: 100px;
+  width: 1px;
   height: 40px;
   border-radius: 30px;
   color: #FFFFFF;

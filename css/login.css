@@ -100,6 +100,48 @@ header ul.right li:hover {
   transition: 0.5s;
 }
 
+/* Esconder o menu padrão em resoluções menores */
+header ul.center,
+header ul.right {
+  display: flex;
+}
+
+header ul.center.d-none,
+header ul.right.d-none {
+  display: none !important;
+}
+
+.offcanvas ul li {
+  margin: 10px 0;
+}
+
+/* Ajuste no ícone do botão */
+button.btn i {
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #5b2a86;  /* Cor do ícone */
+}
+
+.offcanvas-body .center,
+.offcanvas-body .right {
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 10px; /* Espaço entre os itens */
+  padding: 0;
+  list-style: none; /* Remove os marcadores */
+}
+
+.offcanvas-body .center li,
+.offcanvas-body .right li {
+  margin: 0;
+}
+
+.offcanvas-body .center li a,
+.offcanvas-body .right li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #5b2a86; /* Cor personalizada */
+}
+
+
 .container-login {
   background-color: #F6F3E3;
   padding: 30px;

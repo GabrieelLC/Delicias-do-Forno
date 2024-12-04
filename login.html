@@ -30,40 +30,98 @@
     <title>Login - Delícias do Forno</title>
   </head>
   <body id="fundo">
-    <header>
-      <h2>Delicias do Forno</h2>
-      <ul class="center">
-        <li class="home">
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">Produtos</a>
-        </li>
-        <li>
-          <a href="QuemSomos.html">Quem Somos</a>
-        </li>
-        <li>
-          <a href="/">Contato</a>
-        </li>
-      </ul>
-      <ul class="right">
-        <li>
-          <a href="/">
-            <img src="assets/lupa.png" alt="lupa.png" />
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="assets/carrinho.png" alt="carrinho.png" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="assets/usuario.png" alt="usuario.png" />
-          </a>
-        </li>
-      </ul>
+    <header class="d-flex align-items-center justify-content-between">
+      <h2>Delícias do Forno</h2>
+    
+      <!-- Botão para o menu Offcanvas (aparece em telas menores) -->
+      <button
+        class="btn btn-primary d-xl-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menuOffcanvas"
+        aria-controls="menuOffcanvas"
+        style="background-color: #f1efe0; border: none; align-items: center;"
+      >
+        <i class="bi bi-list" style="font-size: 2rem; color: #5b2a86;"></i>
+      </button>
+    
+      <!-- Menu Offcanvas (para telas menores) -->
+      <div class="offcanvas offcanvas-end d-xl-none" id="menuOffcanvas" tabindex="-1" aria-labelledby="menuOffcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 id="menuOffcanvasLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="center">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Produtos</a>
+            </li>
+            <li>
+              <a href="QuemSomos.html">Quem Somos</a>
+            </li>
+            <li>
+              <a href="/">Contato</a>
+            </li>
+          </ul>
+          <ul class="right">
+            <li>
+              <a href="/">
+                <img src="assets/lupa.png" alt="Lupa" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="assets/carrinho.png" alt="Carrinho" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/usuario.png" alt="Usuário" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- Menu Principal (Desktop, para telas maiores) -->
+      <div class="d-none d-xl-flex justify-content-center w-100">
+        <ul class="center">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Produtos</a>
+          </li>
+          <li>
+            <a href="QuemSomos.html">Quem Somos</a>
+          </li>
+          <li>
+            <a href="/">Contato</a>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <a href="/">
+              <img src="assets/lupa.png" alt="Lupa" />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="assets/carrinho.png" alt="Carrinho" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/usuario.png" alt="Usuário" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
+    
     <div class="container-login">
       <h1>Delícias do Forno</h1>
       <form class="login-form">
